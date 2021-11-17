@@ -3,18 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FAB5630D959CEA38E1EFD91 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0480901FB8C690767C4EC524 /* Pods_Example.framework */; };
 		F5A1B33627457596005E74EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A1B33527457596005E74EC /* AppDelegate.swift */; };
 		F5A1B33827457596005E74EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A1B33727457596005E74EC /* SceneDelegate.swift */; };
 		F5A1B33A27457596005E74EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A1B33927457596005E74EC /* ViewController.swift */; };
 		F5A1B33D27457596005E74EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A1B33B27457596005E74EC /* Main.storyboard */; };
 		F5A1B33F27457597005E74EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A1B33E27457597005E74EC /* Assets.xcassets */; };
 		F5A1B34227457597005E74EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A1B34027457597005E74EC /* LaunchScreen.storyboard */; };
+		F5A1B36C27457FEC005E74EC /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0480901FB8C690767C4EC524 /* Pods_Example.framework */; };
+		F5A1B379274580F2005E74EC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A1B36827457FCB005E74EC /* XCTest.framework */; };
+		F5A1B37A274580F2005E74EC /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5A1B36827457FCB005E74EC /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5A1B37B274580F2005E74EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F5A1B37A274580F2005E74EC /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0480901FB8C690767C4EC524 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +44,7 @@
 		F5A1B33E27457597005E74EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A1B34127457597005E74EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A1B34327457597005E74EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A1B36827457FCB005E74EC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FAB5630D959CEA38E1EFD91 /* Pods_Example.framework in Frameworks */,
+				F5A1B36C27457FEC005E74EC /* Pods_Example.framework in Frameworks */,
+				F5A1B379274580F2005E74EC /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +63,7 @@
 		B0A91577F3482A52AAA13368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5A1B36827457FCB005E74EC /* XCTest.framework */,
 				0480901FB8C690767C4EC524 /* Pods_Example.framework */,
 			);
 			name = Frameworks;
@@ -56,7 +75,6 @@
 				D9A9C9E4F48FB7332240960A /* Pods-Example.debug.xcconfig */,
 				4AA30FF2DA64A98089404329 /* Pods-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,6 +122,7 @@
 				F5A1B32F27457596005E74EC /* Frameworks */,
 				F5A1B33027457596005E74EC /* Resources */,
 				2CC9D56AA70817614815F9F2 /* [CP] Embed Pods Frameworks */,
+				F5A1B37B274580F2005E74EC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
