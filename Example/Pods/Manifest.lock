@@ -1,5 +1,5 @@
 PODS:
-  - AKPodTest (0.2.0)
+  - AKPodTest (0.3.0)
 
 DEPENDENCIES:
   - AKPodTest
@@ -9,7 +9,7 @@ SPEC REPOS:
     - AKPodTest
 
 SPEC CHECKSUMS:
-  AKPodTest: 652fedc83075d200770e6dbf4d70649d05748caa
+  AKPodTest: 7f57c7656857f78dfe5d4feac15664be332835ad
 
 PODFILE CHECKSUM: 08cf491dc03a2b00bf031d13f43888cc38d6a244
 
